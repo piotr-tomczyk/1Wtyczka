@@ -1,0 +1,16 @@
+{
+    "name": "test1st",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts":[
+        {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+        }
+    ],
+    "action":{
+        "default_popup":"index.html",
+        "default_title":"Hello World"
+    }
+  }
